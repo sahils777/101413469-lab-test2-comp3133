@@ -1,0 +1,110 @@
+.filter-container {
+    display: flex;
+    padding: 2rem;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: auto;
+  }
+
+  .filter-panel {
+    width: 220px;
+    background-color: #f5f7fa;
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .filter-panel h4 {
+    font-size: 1rem;
+    margin: 1rem 0 0.5rem;
+    color: #003366;
+  }
+
+  /* Year buttons */
+  .year-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+  }
+
+  /* True/False toggles */
+  .toggle-group {
+    display: flex;
+    justify-content: space-between;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+  }
+
+  /* Filter & toggle buttons */
+  .filter-panel button {
+    padding: 0.4rem 0.6rem;
+    font-size: 0.85rem;
+    border: none;
+    border-radius: 4px;
+    background-color: #cdeafc;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    width: 100%;
+  }
+
+  .filter-panel button:hover {
+    background-color: #99d4f9;
+  }
+
+  /* Reset button styling */
+  .reset-btn {
+    width: 100%;
+    margin-top: 0.5rem;
+    padding: 0.5rem;
+    background-color: #ff6666;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+
+  .reset-btn:hover {
+    background-color: #cc0000;
+  }
+
+  /* Filtered mission cards layout */
+  .filtered-missions {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 1rem;
+    flex: 1;
+  }
+
+  /* Each mission card */
+  .mission-card {
+    background-color: white;
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.2s ease;
+  }
+
+  .mission-card:hover {
+    transform: translateY(-2px);
+  }
+
+  .mission-card img {
+    width: 100%;
+    max-height: 150px;
+    object-fit: contain;
+    margin-bottom: 0.5rem;
+  }
+
+  .mission-card h5 {
+    font-size: 1rem;
+    margin: 0.25rem 0;
+    color: #004080;
+  }
+
+  .mission-card p {
+    font-size: 0.875rem;
+    color: #666;
+  }

@@ -1,0 +1,122 @@
+body {
+    background-color: #f8fafc;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.mission-list-container {
+    max-width: 1100px;
+    margin: 2.5rem auto;
+    padding: 2rem;
+    background: #ffffff;
+    border-radius: 14px;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06);
+    border: 1px solid rgba(0, 0, 0, 0.03);
+}
+
+.mission-list-container h2 {
+    text-align: center;
+    color: #1e293b;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    font-weight: 600;
+    letter-spacing: -0.5px;
+}
+
+.mission-cards-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.mission-card {
+    display: flex;
+    background-color: #f8fafc;
+    padding: 1.5rem;
+    border-radius: 12px;
+    border: 1px solid #6366f1;
+    align-items: flex-start;
+    gap: 1.5rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    border-left: 4px solid #6366f1;
+}
+
+.mission-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+    background-color: #ffffff;
+}
+
+.patch {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    object-fit: contain;
+    background-color: white;
+    padding: 0.75rem;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.mission-content {
+    flex: 1;
+}
+
+.mission-content h3 {
+    margin: 0;
+    font-size: 1.25rem;
+    color: #1e293b;
+    font-weight: 500;
+}
+
+.mission-content .year {
+    color: #64748b;
+    margin: 0.5rem 0;
+    font-size: 0.875rem;
+    font-weight: 400;
+}
+
+.mission-content .details {
+    font-size: 0.9375rem;
+    margin-bottom: 1.25rem;
+    color: #475569;
+    line-height: 1.6;
+}
+
+.mission-content button {
+    background-color: #6366f1;
+    border: none;
+    color: white;
+    padding: 0.5rem 1.25rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 500;
+    box-shadow: 0 2px 4px rgba(99, 102, 241, 0.2);
+}
+
+.mission-content button:hover {
+    background-color: #4f46e5;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(99, 102, 241, 0.3);
+}
+
+.filter-link {
+    display: inline-block;
+    margin-bottom: 1rem;
+    background-color: #f43f5e;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(244, 63, 94, 0.2);
+}
+
+.filter-link:hover {
+    background-color: #e11d48;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(244, 63, 94, 0.3);
+}

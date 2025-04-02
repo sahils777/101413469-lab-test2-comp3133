@@ -1,0 +1,16 @@
+<div class="mission-list-container">
+    <h2>🚀 SpaceX Mission Launch List</h2>
+    <a routerLink="/filter" class="filter-link">🔍 Filter Missions</a>
+
+    <div class="mission-cards-wrapper">
+      <div class="mission-card" *ngFor="let mission of missions">
+        <img class="patch" [src]="mission.links.mission_patch_small" alt="Patch" />
+        <div class="mission-content">
+          <h3>{{ mission.mission_name }}</h3>
+          <p class="year">Year: {{ mission.launch_year }}</p>
+          <p class="details">{{ mission.details }}</p>
+          <button (click)="viewDetails(mission.flight_number)">View Details</button>
+        </div>
+      </div>
+    </div>
+  </div>
