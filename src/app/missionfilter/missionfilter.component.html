@@ -20,8 +20,7 @@
       </div>
 
       <h4>Reset</h4>
-     <button (click)="resetFilters()">Reset Filters</button>
-
+      <button class="reset-btn" (click)="resetFilters()">Reset Filters</button>
     </aside>
 
     <section class="filtered-missions">
@@ -29,7 +28,14 @@
         <img [src]="mission.links.mission_patch_small" alt="Patch" />
         <h5>{{ mission.mission_name }}</h5>
         <p>Year: {{ mission.launch_year }}</p>
+        <p>
+          <strong>Successful Launch:</strong>
+          {{ mission.launch_success === true ? 'Yes' : mission.launch_success === false ? 'No' : 'No Data' }}
+        </p>
+        <p>
+          <strong>Successful Landing:</strong>
+          {{ mission.rocket?.first_stage?.cores[0]?.land_success === true ? 'Yes' : mission.rocket?.first_stage?.cores[0]?.land_success === false ? 'No' : 'No Data' }}
+        </p>
       </div>
     </section>
-
   </div>
